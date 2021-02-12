@@ -1,0 +1,9 @@
+.Page {
+  height: 100vh;
+  margin: auto;
+  width: 629px;
+  background: #ec9f05;
+
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}

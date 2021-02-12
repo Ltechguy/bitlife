@@ -1,0 +1,10 @@
+.SecondaryButtons {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.SecondaryButtons > div {
+  flex: 0 45%;
+}

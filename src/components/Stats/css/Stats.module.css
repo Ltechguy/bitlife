@@ -1,0 +1,6 @@
+.Stats {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}

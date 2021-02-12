@@ -1,0 +1,20 @@
+.Container {
+  width: 100%;
+}
+.ActionBoard {
+  padding: 20px;
+
+  width: 580px;
+  height: 250px;
+  margin: auto;
+
+  background: #e3e3e3;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+}
+
+.Age {
+  font-size: 1.7em;
+  margin-bottom: 15px;
+}

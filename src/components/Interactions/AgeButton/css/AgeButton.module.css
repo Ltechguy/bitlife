@@ -1,0 +1,37 @@
+.AgeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 129px;
+  height: 135px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: radial-gradient(
+      43.22% 39.46% at 49.03% 50.37%,
+      #f5bb00 0%,
+      #ee8811 100%
+    ),
+    #f5bb00;
+
+  border: 5px solid #ffffff;
+  border-radius: 15px;
+
+  color: #ffffff;
+  font-size: 2.5em;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.AgeButton:active {
+  background: radial-gradient(
+      43.22% 39.46% at 49.03% 50.37%,
+      #f57e00 0%,
+      #ee810e 100%
+    ),
+    #f5bb00;
+}

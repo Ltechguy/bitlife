@@ -1,0 +1,17 @@
+.CharInfo {
+  height: 135px;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      #f5bb00 0%,
+      #f5bb00 55.21%,
+      #eaa800 100%
+    ),
+    #f5bb00;
+}

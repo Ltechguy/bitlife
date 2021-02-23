@@ -1,88 +1,46 @@
-:root {
-  --percentage: attr(data-number);
-}
-
-.BigCircle {
-  width: 95px;
-  height: 95px;
-  background-color: white;
-  z-index: 1;
-  border-radius: 50%;
-}
-
-.BigCircle svg circle {
-  fill: none;
+.ProgressRingCircle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+  stroke: #1fcc03;
   stroke-width: 10;
-  stroke-dasharray: 240;
-  stroke-dashoffset: 240;
-  transform: translate(99%) rotate(90deg);
+  fill: white;
 }
 
-.BigCircle svg circle:nth-child(2) {
-  stroke: green;
-  stroke-dashoffset: calc(240 - (240 * var(--percentage)) / 100);
-}
-
-.BigCircle svg circle:nth-child(1) {
-  stroke: #f3f3f3;
-  stroke-dashoffset: 0;
-}
-
-.BigCircle,
-.TextBox {
+.OutsideCircle {
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.MiddleCircle,
-.TextBox {
-  position: relative;
+.Container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.MiddleCircle {
-  border-radius: 50%;
-  z-index: 2;
-  margin: auto;
-  top: -60px;
-}
+.Container p {
+  font-size: 25px;
+  line-height: 31px;
 
-.SmallCircle {
-  text-align: center;
+  color: black;
+
   position: absolute;
-  border-radius: 50%;
-  width: 68px;
-  height: 68px;
-  background: radial-gradient(
-      204.39% 204.39% at 50% 50%,
-      #ffffff 12%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    #000000;
+  top: 233px;
 }
 
-.SmallCircle p::before {
-  content: var(--percentage) '';
-}
-
-.SmallCircle p {
-  font-size: 1.5625em;
-  -webkit-text-stroke: 1px black;
-  position: relative;
-  color: white;
-  height: 25px;
-  top: 20px;
-}
-
-.TextBox {
-  top: 42px;
-  width: 94px;
-  background: #ffffff;
+.StatTitle {
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-}
-
-.TextBox p {
-  font-size: 1em;
-  padding: 2px 0;
+  text-align: center;
+  padding: 3px;
+  position: relative;
+  width: 100px;
+  top: -15px;
 }

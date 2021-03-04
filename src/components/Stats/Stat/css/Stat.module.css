@@ -40,7 +40,7 @@
   border-radius: 5px;
   text-align: center;
   padding: 3px;
-  position: relative;
+  position: absolute;
   width: 100px;
-  top: -15px;
+  top: 295px;
 }
